@@ -1,0 +1,8 @@
+---
+- set_fact:
+    veracrypt_package: "veracrypt"
+  when: veracrypt_gui
+
+- name: Install VeraCrypt .deb package from the internet.
+  apt:
+    deb: "https://launchpad.net/veracrypt/trunk/{{ veracrypt_version }}/+download/{{ veracrypt_package }}-{{ veracrypt_version }}-{{ ansible_distribution }}-{{ ansible_distribution_version }}-amd64.deb"
