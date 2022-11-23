@@ -1,6 +1,6 @@
 ---
-veracrypt_version: '1.24'
-veracrypt_update: 7
+veracrypt_version: '1.25'
+veracrypt_update: 9
 veracrypt_gui: true
 veracrypt_package: 'veracrypt-console'
 
